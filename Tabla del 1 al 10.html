@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Tabla del 1 al 10
+    </h1>
+<script>
+     function tablamultiplicar(){
+       var Multiplicador;
+        var dato=1;
+        var mutli=1;
+        document.write("<table border=1>")
+        while(dato<=10){
+        document.write("<tr>","<td>",Multi,"*",dato,"=",mutli*dato,"</tr>","</td>");
+        dato = dato + 1;
+        }
+        document.write("</table>")
+    }
+
+</script>
+<script>
+    function principal(){
+        while(multi<100){
+            tablamultiplicar(multi)
+            mutli = multi + 1;
+        }
+    }
+</script>
+<script>
+    function secuencial(){
+        j=1
+        while(j<100){
+            multi=1
+            while(multi<=10){
+                document.write(j*multi);
+                multi = multi +1
+            }
+            j = j+1
+            document.write("<br>")
+        }
+    }
+</script>
+</body>
+</html>

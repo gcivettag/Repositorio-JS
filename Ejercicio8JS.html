@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Galeria</h1>
+<script>
+    function GaleriaHorizontal(){
+        var foto
+        foto=0
+        document.write("<table><tr>");
+    while (foto<4){
+        document.write("<td><img src=Amadou.jpeg> </td>");
+        foto=foto+1;
+    }
+    document.write("</tr></table>");
+    }
+    
+    function GaleriaVertical(){
+        var foto1
+        foto1=0
+        document.write("<table>");
+    while (foto1<3){
+        document.write("<tr><td><img src=Amadou.jpeg> </td>");
+        foto1=foto1+1;
+    }
+    }
+    function principal(){
+    opcion=document.getElementById("seleccion").value;
+    if( opcion=="horizontal"){
+        GaleriaHorizontal()
+    }
+    else{
+        GaleriaVertical()
+    }
+    }
+    
+</script>
+
+<select  id="seleccion" onchange="principal()">
+    <option>Seleccionar</option>
+    <option>horizontal</option>
+    <option>vertical</option>
+</select>
+</body>
+</html>
